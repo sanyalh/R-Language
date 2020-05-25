@@ -6,5 +6,13 @@ ggplot(data = mpg) +
 
 #2
 ?mpg
+#continuous - displ, year, cyl, city, hwy, 
+# remaining are categorical
 
 #3
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color=cyl, size=cty))
+
+#4
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color=displ))
