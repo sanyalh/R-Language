@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+#install.packages("tidyverse")
+#install.packages("nycflights13")
+
+library(tidyverse)
+library(nycflights13)
+```
+
+
+#1
+```{r}
+head(mtcars)
+as_tibble(mtcars)
+```
+
+#2
+```{r}
+df <- data.frame(abc = 1, xyz = "a")
+df$x
+df[, "xyz"]
+df[, c("abc", "xyz")]
+```
+
+
+#3
+var <- "mpg"
+
+```
